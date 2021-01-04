@@ -1,0 +1,1653 @@
+2021-01-04 21:41:58.192656 (MainThread): Running with dbt=0.18.1
+2021-01-04 21:41:58.542621 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.test.TestTask'>, data=False, debug=False, defer=None, exclude=None, fail_fast=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/blake/.dbt', project_dir=None, record_timing_info=None, rpc_method='test', schema=False, selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='test', write_json=True)
+2021-01-04 21:41:58.544001 (MainThread): Tracking: tracking
+2021-01-04 21:41:58.557901 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110f2df40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1116bed60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1116cfd90>]}
+2021-01-04 21:41:58.578669 (MainThread): Partial parsing not enabled
+2021-01-04 21:41:58.580083 (MainThread): Parsing macros/etc.sql
+2021-01-04 21:41:58.583992 (MainThread): Parsing macros/catalog.sql
+2021-01-04 21:41:58.590384 (MainThread): Parsing macros/adapters.sql
+2021-01-04 21:41:58.608818 (MainThread): Parsing macros/materializations/seed.sql
+2021-01-04 21:41:58.612092 (MainThread): Parsing macros/materializations/view.sql
+2021-01-04 21:41:58.615499 (MainThread): Parsing macros/materializations/table.sql
+2021-01-04 21:41:58.625769 (MainThread): Parsing macros/materializations/copy.sql
+2021-01-04 21:41:58.630490 (MainThread): Parsing macros/materializations/incremental.sql
+2021-01-04 21:41:58.643232 (MainThread): Parsing macros/materializations/snapshot.sql
+2021-01-04 21:41:58.647565 (MainThread): Parsing macros/core.sql
+2021-01-04 21:41:58.651570 (MainThread): Parsing macros/materializations/helpers.sql
+2021-01-04 21:41:58.660222 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-01-04 21:41:58.662283 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-01-04 21:41:58.678176 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-01-04 21:41:58.704158 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-01-04 21:41:58.743840 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-01-04 21:41:58.747166 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-01-04 21:41:58.755735 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-01-04 21:41:58.770435 (MainThread): Parsing macros/materializations/table/table.sql
+2021-01-04 21:41:58.777347 (MainThread): Parsing macros/materializations/view/view.sql
+2021-01-04 21:41:58.783674 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-01-04 21:41:58.788699 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-01-04 21:41:58.790061 (MainThread): Parsing macros/etc/query.sql
+2021-01-04 21:41:58.791419 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-01-04 21:41:58.793368 (MainThread): Parsing macros/etc/datetime.sql
+2021-01-04 21:41:58.801857 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-01-04 21:41:58.803936 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-01-04 21:41:58.806009 (MainThread): Parsing macros/adapters/common.sql
+2021-01-04 21:41:58.841765 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-01-04 21:41:58.844013 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-01-04 21:41:58.845773 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-01-04 21:41:58.847715 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-01-04 21:41:58.854808 (MainThread): Partial parsing not enabled
+2021-01-04 21:41:58.920167 (MainThread): Acquiring new bigquery connection "model.jaffle_shop.customers".
+2021-01-04 21:41:58.942303 (MainThread): Acquiring new bigquery connection "model.jaffle_shop.stg_customers".
+2021-01-04 21:41:58.951316 (MainThread): Acquiring new bigquery connection "model.jaffle_shop.stg_orders".
+2021-01-04 21:41:59.208523 (MainThread): Found 3 models, 7 tests, 0 snapshots, 0 analyses, 155 macros, 0 operations, 0 seed files, 0 sources
+2021-01-04 21:41:59.209772 (MainThread): 
+2021-01-04 21:41:59.210127 (MainThread): Acquiring new bigquery connection "master".
+2021-01-04 21:41:59.220922 (ThreadPoolExecutor-1_0): Acquiring new bigquery connection "list_dbt-demos_dbt_shipyard".
+2021-01-04 21:41:59.221105 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state init
+2021-01-04 21:41:59.222182 (ThreadPoolExecutor-1_0): Client.dataset is deprecated and will be removed in a future version. Use a string like 'my_project.my_dataset' or a cloud.google.bigquery.DatasetReference object, instead.
+2021-01-04 21:41:59.668787 (MainThread): 15:41:59 | Concurrency: 4 threads (target='dev')
+2021-01-04 21:41:59.669493 (MainThread): 15:41:59 | 
+2021-01-04 21:41:59.705048 (Thread-1): Began running node test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned
+2021-01-04 21:41:59.705353 (Thread-1): 15:41:59 | 1 of 7 START test accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned [RUN]
+2021-01-04 21:41:59.705592 (Thread-2): Began running node test.jaffle_shop.not_null_customers_customer_id
+2021-01-04 21:41:59.706079 (Thread-1): Acquiring new bigquery connection "test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned".
+2021-01-04 21:41:59.706512 (Thread-3): Began running node test.jaffle_shop.not_null_stg_customers_customer_id
+2021-01-04 21:41:59.706681 (Thread-2): 15:41:59 | 2 of 7 START test not_null_customers_customer_id..................... [RUN]
+2021-01-04 21:41:59.706805 (Thread-4): Began running node test.jaffle_shop.not_null_stg_orders_order_id
+2021-01-04 21:41:59.707001 (Thread-1): Compiling test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned
+2021-01-04 21:41:59.707163 (Thread-3): 15:41:59 | 3 of 7 START test not_null_stg_customers_customer_id................. [RUN]
+2021-01-04 21:41:59.707425 (Thread-4): 15:41:59 | 4 of 7 START test not_null_stg_orders_order_id....................... [RUN]
+2021-01-04 21:41:59.707829 (Thread-2): Acquiring new bigquery connection "test.jaffle_shop.not_null_customers_customer_id".
+2021-01-04 21:41:59.714665 (Thread-3): Acquiring new bigquery connection "test.jaffle_shop.not_null_stg_customers_customer_id".
+2021-01-04 21:41:59.717995 (Thread-1): unclosed <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.0.162', 52546), raddr=('216.58.194.42', 443)>
+2021-01-04 21:41:59.718389 (Thread-4): Acquiring new bigquery connection "test.jaffle_shop.not_null_stg_orders_order_id".
+2021-01-04 21:41:59.718577 (Thread-2): Compiling test.jaffle_shop.not_null_customers_customer_id
+2021-01-04 21:41:59.718714 (Thread-3): Compiling test.jaffle_shop.not_null_stg_customers_customer_id
+2021-01-04 21:41:59.718926 (Thread-1): unclosed <socket.socket fd=11, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.0.162', 52547), raddr=('216.58.193.138', 443)>
+2021-01-04 21:41:59.719003 (Thread-4): Compiling test.jaffle_shop.not_null_stg_orders_order_id
+2021-01-04 21:41:59.731298 (Thread-2): Writing injected SQL for node "test.jaffle_shop.not_null_customers_customer_id"
+2021-01-04 21:41:59.739452 (Thread-3): Writing injected SQL for node "test.jaffle_shop.not_null_stg_customers_customer_id"
+2021-01-04 21:41:59.749185 (Thread-1): Writing injected SQL for node "test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned"
+2021-01-04 21:41:59.757474 (Thread-4): Writing injected SQL for node "test.jaffle_shop.not_null_stg_orders_order_id"
+2021-01-04 21:41:59.759039 (Thread-4): finished collecting timing info
+2021-01-04 21:41:59.759401 (Thread-4): Opening a new connection, currently in state init
+2021-01-04 21:41:59.759762 (Thread-3): finished collecting timing info
+2021-01-04 21:41:59.760104 (Thread-3): Opening a new connection, currently in state init
+2021-01-04 21:41:59.760314 (Thread-2): finished collecting timing info
+2021-01-04 21:41:59.760572 (Thread-2): Opening a new connection, currently in state init
+2021-01-04 21:41:59.760913 (Thread-1): finished collecting timing info
+2021-01-04 21:41:59.761205 (Thread-1): Opening a new connection, currently in state closed
+2021-01-04 21:41:59.762143 (Thread-3): On test.jaffle_shop.not_null_stg_customers_customer_id: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.not_null_stg_customers_customer_id"} */
+
+    
+    
+
+
+
+select count(*) as validation_errors
+from `dbt-demos`.`dbt_shipyard`.`stg_customers`
+where customer_id is null
+
+
+
+2021-01-04 21:41:59.763113 (Thread-4): On test.jaffle_shop.not_null_stg_orders_order_id: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.not_null_stg_orders_order_id"} */
+
+    
+    
+
+
+
+select count(*) as validation_errors
+from `dbt-demos`.`dbt_shipyard`.`stg_orders`
+where order_id is null
+
+
+
+2021-01-04 21:41:59.763299 (Thread-1): On test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned"} */
+
+    
+    
+
+
+
+
+with all_values as (
+
+    select distinct
+        status as value_field
+
+    from `dbt-demos`.`dbt_shipyard`.`stg_orders`
+
+),
+
+validation_errors as (
+
+    select
+        value_field
+
+    from all_values
+    where value_field not in (
+        'placed','shipped','completed','return_pending','returned'
+    )
+)
+
+select count(*) as validation_errors
+from validation_errors
+
+
+
+2021-01-04 21:41:59.763840 (Thread-2): On test.jaffle_shop.not_null_customers_customer_id: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.not_null_customers_customer_id"} */
+
+    
+    
+
+
+
+select count(*) as validation_errors
+from `dbt-demos`.`dbt_shipyard`.`customers`
+where customer_id is null
+
+
+
+2021-01-04 21:42:00.309503 (Thread-3): Unhandled error while running:
+/* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.not_null_stg_customers_customer_id"} */
+
+    
+    
+
+
+
+select count(*) as validation_errors
+from `dbt-demos`.`dbt_shipyard`.`stg_customers`
+where customer_id is null
+
+
+
+2021-01-04 21:42:00.309833 (Thread-3): 404 Not found: Dataset dbt-demos:dbt_shipyard was not found in location US
+
+(job ID: 5eeed53e-9188-4642-b28c-ca89ab100fbf)
+
+                                                                     -----Query Job SQL Follows-----                                                                     
+
+    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |
+   1:/* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.not_null_stg_customers_customer_id"} */
+   2:
+   3:    
+   4:    
+   5:
+   6:
+   7:
+   8:select count(*) as validation_errors
+   9:from `dbt-demos`.`dbt_shipyard`.`stg_customers`
+  10:where customer_id is null
+  11:
+  12:
+    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |
+2021-01-04 21:42:00.310156 (Thread-3): finished collecting timing info
+2021-01-04 21:42:00.318925 (Thread-2): Unhandled error while running:
+/* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.not_null_customers_customer_id"} */
+
+    
+    
+
+
+
+select count(*) as validation_errors
+from `dbt-demos`.`dbt_shipyard`.`customers`
+where customer_id is null
+
+
+
+2021-01-04 21:42:00.319557 (Thread-2): 404 Not found: Dataset dbt-demos:dbt_shipyard was not found in location US
+
+(job ID: 543ad0ba-c377-4c33-928d-c0d23ad26878)
+
+                                                                   -----Query Job SQL Follows-----                                                                   
+
+    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |
+   1:/* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.not_null_customers_customer_id"} */
+   2:
+   3:    
+   4:    
+   5:
+   6:
+   7:
+   8:select count(*) as validation_errors
+   9:from `dbt-demos`.`dbt_shipyard`.`customers`
+  10:where customer_id is null
+  11:
+  12:
+    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |
+2021-01-04 21:42:00.320250 (Thread-2): finished collecting timing info
+2021-01-04 21:42:00.329114 (Thread-1): Unhandled error while running:
+/* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned"} */
+
+    
+    
+
+
+
+
+with all_values as (
+
+    select distinct
+        status as value_field
+
+    from `dbt-demos`.`dbt_shipyard`.`stg_orders`
+
+),
+
+validation_errors as (
+
+    select
+        value_field
+
+    from all_values
+    where value_field not in (
+        'placed','shipped','completed','return_pending','returned'
+    )
+)
+
+select count(*) as validation_errors
+from validation_errors
+
+
+
+2021-01-04 21:42:00.330870 (Thread-1): 404 Not found: Dataset dbt-demos:dbt_shipyard was not found in location US
+
+(job ID: 81d6e999-6242-4fcc-95a0-704b74e25bf3)
+
+                                                                                               -----Query Job SQL Follows-----                                                                                                
+
+    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |
+   1:/* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned"} */
+   2:
+   3:    
+   4:    
+   5:
+   6:
+   7:
+   8:
+   9:with all_values as (
+  10:
+  11:    select distinct
+  12:        status as value_field
+  13:
+  14:    from `dbt-demos`.`dbt_shipyard`.`stg_orders`
+  15:
+  16:),
+  17:
+  18:validation_errors as (
+  19:
+  20:    select
+  21:        value_field
+  22:
+  23:    from all_values
+  24:    where value_field not in (
+  25:        'placed','shipped','completed','return_pending','returned'
+  26:    )
+  27:)
+  28:
+  29:select count(*) as validation_errors
+  30:from validation_errors
+  31:
+  32:
+    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |
+2021-01-04 21:42:00.331657 (Thread-4): Unhandled error while running:
+/* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.not_null_stg_orders_order_id"} */
+
+    
+    
+
+
+
+select count(*) as validation_errors
+from `dbt-demos`.`dbt_shipyard`.`stg_orders`
+where order_id is null
+
+
+
+2021-01-04 21:42:00.331848 (Thread-1): finished collecting timing info
+2021-01-04 21:42:00.332357 (Thread-4): 404 Not found: Dataset dbt-demos:dbt_shipyard was not found in location US
+
+(job ID: fd2e4ffc-cbeb-4bf6-a87f-968cb34575ed)
+
+                                                                  -----Query Job SQL Follows-----                                                                  
+
+    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |
+   1:/* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.not_null_stg_orders_order_id"} */
+   2:
+   3:    
+   4:    
+   5:
+   6:
+   7:
+   8:select count(*) as validation_errors
+   9:from `dbt-demos`.`dbt_shipyard`.`stg_orders`
+  10:where order_id is null
+  11:
+  12:
+    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |
+2021-01-04 21:42:00.333417 (Thread-4): finished collecting timing info
+2021-01-04 21:42:00.321448 (Thread-2): Runtime Error in test not_null_customers_customer_id (models/schema.yml)
+  404 Not found: Dataset dbt-demos:dbt_shipyard was not found in location US
+  
+  (job ID: 543ad0ba-c377-4c33-928d-c0d23ad26878)
+Traceback (most recent call last):
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 103, in exception_handler
+    yield
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 442, in _retry_and_handle
+    return retry.retry_target(
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/google/api_core/retry.py", line 184, in retry_target
+    return target()
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 266, in fn
+    return self._query_and_results(client, sql, conn, job_params)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 428, in _query_and_results
+    iterator = query_job.result(timeout=timeout)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/google/cloud/bigquery/job.py", line 3207, in result
+    super(QueryJob, self).result(retry=retry, timeout=timeout)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/google/cloud/bigquery/job.py", line 812, in result
+    return super(_AsyncJob, self).result(timeout=timeout)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/google/api_core/future/polling.py", line 127, in result
+    raise self._exception
+google.api_core.exceptions.NotFound: 404 Not found: Dataset dbt-demos:dbt_shipyard was not found in location US
+
+(job ID: 543ad0ba-c377-4c33-928d-c0d23ad26878)
+
+                                                                   -----Query Job SQL Follows-----                                                                   
+
+    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |
+   1:/* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.not_null_customers_customer_id"} */
+   2:
+   3:    
+   4:    
+   5:
+   6:
+   7:
+   8:select count(*) as validation_errors
+   9:from `dbt-demos`.`dbt_shipyard`.`customers`
+  10:where customer_id is null
+  11:
+  12:
+    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/task/base.py", line 333, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/task/base.py", line 276, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/task/base.py", line 378, in run
+    return self.execute(compiled_node, manifest)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/task/test.py", line 84, in execute
+    failed_rows = self.execute_schema_test(test)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/task/test.py", line 61, in execute_schema_test
+    res, table = self.adapter.execute(
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 224, in execute
+    return self.connections.execute(
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 275, in execute
+    query_job, iterator = self.raw_execute(sql, fetch=fetch)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 268, in raw_execute
+    query_job, iterator = self._retry_and_handle(msg=sql, conn=conn, fn=fn)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 442, in _retry_and_handle
+    return retry.retry_target(
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 134, in exception_handler
+    raise RuntimeException(exc_message)
+dbt.exceptions.RuntimeException: Runtime Error in test not_null_customers_customer_id (models/schema.yml)
+  404 Not found: Dataset dbt-demos:dbt_shipyard was not found in location US
+  
+  (job ID: 543ad0ba-c377-4c33-928d-c0d23ad26878)
+2021-01-04 21:42:00.332946 (Thread-1): Runtime Error in test accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned (models/schema.yml)
+  404 Not found: Dataset dbt-demos:dbt_shipyard was not found in location US
+  
+  (job ID: 81d6e999-6242-4fcc-95a0-704b74e25bf3)
+Traceback (most recent call last):
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 103, in exception_handler
+    yield
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 442, in _retry_and_handle
+    return retry.retry_target(
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/google/api_core/retry.py", line 184, in retry_target
+    return target()
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 266, in fn
+    return self._query_and_results(client, sql, conn, job_params)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 428, in _query_and_results
+    iterator = query_job.result(timeout=timeout)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/google/cloud/bigquery/job.py", line 3207, in result
+    super(QueryJob, self).result(retry=retry, timeout=timeout)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/google/cloud/bigquery/job.py", line 812, in result
+    return super(_AsyncJob, self).result(timeout=timeout)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/google/api_core/future/polling.py", line 127, in result
+    raise self._exception
+google.api_core.exceptions.NotFound: 404 Not found: Dataset dbt-demos:dbt_shipyard was not found in location US
+
+(job ID: 81d6e999-6242-4fcc-95a0-704b74e25bf3)
+
+                                                                                               -----Query Job SQL Follows-----                                                                                                
+
+    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |
+   1:/* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned"} */
+   2:
+   3:    
+   4:    
+   5:
+   6:
+   7:
+   8:
+   9:with all_values as (
+  10:
+  11:    select distinct
+  12:        status as value_field
+  13:
+  14:    from `dbt-demos`.`dbt_shipyard`.`stg_orders`
+  15:
+  16:),
+  17:
+  18:validation_errors as (
+  19:
+  20:    select
+  21:        value_field
+  22:
+  23:    from all_values
+  24:    where value_field not in (
+  25:        'placed','shipped','completed','return_pending','returned'
+  26:    )
+  27:)
+  28:
+  29:select count(*) as validation_errors
+  30:from validation_errors
+  31:
+  32:
+    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/task/base.py", line 333, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/task/base.py", line 276, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/task/base.py", line 378, in run
+    return self.execute(compiled_node, manifest)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/task/test.py", line 84, in execute
+    failed_rows = self.execute_schema_test(test)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/task/test.py", line 61, in execute_schema_test
+    res, table = self.adapter.execute(
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 224, in execute
+    return self.connections.execute(
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 275, in execute
+    query_job, iterator = self.raw_execute(sql, fetch=fetch)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 268, in raw_execute
+    query_job, iterator = self._retry_and_handle(msg=sql, conn=conn, fn=fn)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 442, in _retry_and_handle
+    return retry.retry_target(
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 134, in exception_handler
+    raise RuntimeException(exc_message)
+dbt.exceptions.RuntimeException: Runtime Error in test accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned (models/schema.yml)
+  404 Not found: Dataset dbt-demos:dbt_shipyard was not found in location US
+  
+  (job ID: 81d6e999-6242-4fcc-95a0-704b74e25bf3)
+2021-01-04 21:42:00.334238 (Thread-4): Runtime Error in test not_null_stg_orders_order_id (models/schema.yml)
+  404 Not found: Dataset dbt-demos:dbt_shipyard was not found in location US
+  
+  (job ID: fd2e4ffc-cbeb-4bf6-a87f-968cb34575ed)
+Traceback (most recent call last):
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 103, in exception_handler
+    yield
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 442, in _retry_and_handle
+    return retry.retry_target(
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/google/api_core/retry.py", line 184, in retry_target
+    return target()
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 266, in fn
+    return self._query_and_results(client, sql, conn, job_params)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 428, in _query_and_results
+    iterator = query_job.result(timeout=timeout)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/google/cloud/bigquery/job.py", line 3207, in result
+    super(QueryJob, self).result(retry=retry, timeout=timeout)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/google/cloud/bigquery/job.py", line 812, in result
+    return super(_AsyncJob, self).result(timeout=timeout)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/google/api_core/future/polling.py", line 127, in result
+    raise self._exception
+google.api_core.exceptions.NotFound: 404 Not found: Dataset dbt-demos:dbt_shipyard was not found in location US
+
+(job ID: fd2e4ffc-cbeb-4bf6-a87f-968cb34575ed)
+
+                                                                  -----Query Job SQL Follows-----                                                                  
+
+    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |
+   1:/* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.not_null_stg_orders_order_id"} */
+   2:
+   3:    
+   4:    
+   5:
+   6:
+   7:
+   8:select count(*) as validation_errors
+   9:from `dbt-demos`.`dbt_shipyard`.`stg_orders`
+  10:where order_id is null
+  11:
+  12:
+    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/task/base.py", line 333, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/task/base.py", line 276, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/task/base.py", line 378, in run
+    return self.execute(compiled_node, manifest)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/task/test.py", line 84, in execute
+    failed_rows = self.execute_schema_test(test)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/task/test.py", line 61, in execute_schema_test
+    res, table = self.adapter.execute(
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 224, in execute
+    return self.connections.execute(
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 275, in execute
+    query_job, iterator = self.raw_execute(sql, fetch=fetch)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 268, in raw_execute
+    query_job, iterator = self._retry_and_handle(msg=sql, conn=conn, fn=fn)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 442, in _retry_and_handle
+    return retry.retry_target(
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 134, in exception_handler
+    raise RuntimeException(exc_message)
+dbt.exceptions.RuntimeException: Runtime Error in test not_null_stg_orders_order_id (models/schema.yml)
+  404 Not found: Dataset dbt-demos:dbt_shipyard was not found in location US
+  
+  (job ID: fd2e4ffc-cbeb-4bf6-a87f-968cb34575ed)
+2021-01-04 21:42:00.311169 (Thread-3): Runtime Error in test not_null_stg_customers_customer_id (models/schema.yml)
+  404 Not found: Dataset dbt-demos:dbt_shipyard was not found in location US
+  
+  (job ID: 5eeed53e-9188-4642-b28c-ca89ab100fbf)
+Traceback (most recent call last):
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 103, in exception_handler
+    yield
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 442, in _retry_and_handle
+    return retry.retry_target(
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/google/api_core/retry.py", line 184, in retry_target
+    return target()
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 266, in fn
+    return self._query_and_results(client, sql, conn, job_params)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 428, in _query_and_results
+    iterator = query_job.result(timeout=timeout)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/google/cloud/bigquery/job.py", line 3207, in result
+    super(QueryJob, self).result(retry=retry, timeout=timeout)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/google/cloud/bigquery/job.py", line 812, in result
+    return super(_AsyncJob, self).result(timeout=timeout)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/google/api_core/future/polling.py", line 127, in result
+    raise self._exception
+google.api_core.exceptions.NotFound: 404 Not found: Dataset dbt-demos:dbt_shipyard was not found in location US
+
+(job ID: 5eeed53e-9188-4642-b28c-ca89ab100fbf)
+
+                                                                     -----Query Job SQL Follows-----                                                                     
+
+    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |
+   1:/* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.not_null_stg_customers_customer_id"} */
+   2:
+   3:    
+   4:    
+   5:
+   6:
+   7:
+   8:select count(*) as validation_errors
+   9:from `dbt-demos`.`dbt_shipyard`.`stg_customers`
+  10:where customer_id is null
+  11:
+  12:
+    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/task/base.py", line 333, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/task/base.py", line 276, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/task/base.py", line 378, in run
+    return self.execute(compiled_node, manifest)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/task/test.py", line 84, in execute
+    failed_rows = self.execute_schema_test(test)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/task/test.py", line 61, in execute_schema_test
+    res, table = self.adapter.execute(
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 224, in execute
+    return self.connections.execute(
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 275, in execute
+    query_job, iterator = self.raw_execute(sql, fetch=fetch)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 268, in raw_execute
+    query_job, iterator = self._retry_and_handle(msg=sql, conn=conn, fn=fn)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 442, in _retry_and_handle
+    return retry.retry_target(
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 134, in exception_handler
+    raise RuntimeException(exc_message)
+dbt.exceptions.RuntimeException: Runtime Error in test not_null_stg_customers_customer_id (models/schema.yml)
+  404 Not found: Dataset dbt-demos:dbt_shipyard was not found in location US
+  
+  (job ID: 5eeed53e-9188-4642-b28c-ca89ab100fbf)
+2021-01-04 21:42:00.341031 (Thread-2): 15:42:00 | 2 of 7 ERROR not_null_customers_customer_id.......................... [ERROR in 0.63s]
+2021-01-04 21:42:00.341356 (Thread-1): 15:42:00 | 1 of 7 ERROR accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned [ERROR in 0.64s]
+2021-01-04 21:42:00.341554 (Thread-4): 15:42:00 | 4 of 7 ERROR not_null_stg_orders_order_id............................ [ERROR in 0.62s]
+2021-01-04 21:42:00.341800 (Thread-3): 15:42:00 | 3 of 7 ERROR not_null_stg_customers_customer_id...................... [ERROR in 0.63s]
+2021-01-04 21:42:00.342023 (Thread-2): Finished running node test.jaffle_shop.not_null_customers_customer_id
+2021-01-04 21:42:00.342280 (Thread-1): Finished running node test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned
+2021-01-04 21:42:00.342473 (Thread-4): Finished running node test.jaffle_shop.not_null_stg_orders_order_id
+2021-01-04 21:42:00.342726 (Thread-3): Finished running node test.jaffle_shop.not_null_stg_customers_customer_id
+2021-01-04 21:42:00.342892 (Thread-2): Began running node test.jaffle_shop.unique_customers_customer_id
+2021-01-04 21:42:00.343242 (Thread-1): Began running node test.jaffle_shop.unique_stg_customers_customer_id
+2021-01-04 21:42:00.343496 (Thread-4): Began running node test.jaffle_shop.unique_stg_orders_order_id
+2021-01-04 21:42:00.343886 (Thread-2): 15:42:00 | 5 of 7 START test unique_customers_customer_id....................... [RUN]
+2021-01-04 21:42:00.344124 (Thread-1): 15:42:00 | 6 of 7 START test unique_stg_customers_customer_id................... [RUN]
+2021-01-04 21:42:00.344285 (Thread-4): 15:42:00 | 7 of 7 START test unique_stg_orders_order_id......................... [RUN]
+2021-01-04 21:42:00.344696 (Thread-2): Acquiring new bigquery connection "test.jaffle_shop.unique_customers_customer_id".
+2021-01-04 21:42:00.345079 (Thread-1): Acquiring new bigquery connection "test.jaffle_shop.unique_stg_customers_customer_id".
+2021-01-04 21:42:00.345586 (Thread-4): Acquiring new bigquery connection "test.jaffle_shop.unique_stg_orders_order_id".
+2021-01-04 21:42:00.345724 (Thread-2): Compiling test.jaffle_shop.unique_customers_customer_id
+2021-01-04 21:42:00.345872 (Thread-1): Compiling test.jaffle_shop.unique_stg_customers_customer_id
+2021-01-04 21:42:00.346010 (Thread-4): Compiling test.jaffle_shop.unique_stg_orders_order_id
+2021-01-04 21:42:00.357111 (Thread-2): Writing injected SQL for node "test.jaffle_shop.unique_customers_customer_id"
+2021-01-04 21:42:00.373335 (Thread-1): Writing injected SQL for node "test.jaffle_shop.unique_stg_customers_customer_id"
+2021-01-04 21:42:00.375780 (Thread-4): Writing injected SQL for node "test.jaffle_shop.unique_stg_orders_order_id"
+2021-01-04 21:42:00.376347 (Thread-1): finished collecting timing info
+2021-01-04 21:42:00.376720 (Thread-1): Opening a new connection, currently in state closed
+2021-01-04 21:42:00.377074 (Thread-2): finished collecting timing info
+2021-01-04 21:42:00.377475 (Thread-2): Opening a new connection, currently in state closed
+2021-01-04 21:42:00.377666 (Thread-4): finished collecting timing info
+2021-01-04 21:42:00.378038 (Thread-4): Opening a new connection, currently in state closed
+2021-01-04 21:42:00.378706 (Thread-1): On test.jaffle_shop.unique_stg_customers_customer_id: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.unique_stg_customers_customer_id"} */
+
+    
+    
+
+
+
+select count(*) as validation_errors
+from (
+
+    select
+        customer_id
+
+    from `dbt-demos`.`dbt_shipyard`.`stg_customers`
+    where customer_id is not null
+    group by customer_id
+    having count(*) > 1
+
+) validation_errors
+
+
+
+2021-01-04 21:42:00.379724 (Thread-4): On test.jaffle_shop.unique_stg_orders_order_id: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.unique_stg_orders_order_id"} */
+
+    
+    
+
+
+
+select count(*) as validation_errors
+from (
+
+    select
+        order_id
+
+    from `dbt-demos`.`dbt_shipyard`.`stg_orders`
+    where order_id is not null
+    group by order_id
+    having count(*) > 1
+
+) validation_errors
+
+
+
+2021-01-04 21:42:00.380802 (Thread-2): On test.jaffle_shop.unique_customers_customer_id: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.unique_customers_customer_id"} */
+
+    
+    
+
+
+
+select count(*) as validation_errors
+from (
+
+    select
+        customer_id
+
+    from `dbt-demos`.`dbt_shipyard`.`customers`
+    where customer_id is not null
+    group by customer_id
+    having count(*) > 1
+
+) validation_errors
+
+
+
+2021-01-04 21:42:00.999983 (Thread-1): Unhandled error while running:
+/* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.unique_stg_customers_customer_id"} */
+
+    
+    
+
+
+
+select count(*) as validation_errors
+from (
+
+    select
+        customer_id
+
+    from `dbt-demos`.`dbt_shipyard`.`stg_customers`
+    where customer_id is not null
+    group by customer_id
+    having count(*) > 1
+
+) validation_errors
+
+
+
+2021-01-04 21:42:01.000471 (Thread-1): 404 Not found: Dataset dbt-demos:dbt_shipyard was not found in location US
+
+(job ID: 10beda03-baf6-436e-a2a9-5c6594a720ca)
+
+                                                                    -----Query Job SQL Follows-----                                                                    
+
+    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |
+   1:/* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.unique_stg_customers_customer_id"} */
+   2:
+   3:    
+   4:    
+   5:
+   6:
+   7:
+   8:select count(*) as validation_errors
+   9:from (
+  10:
+  11:    select
+  12:        customer_id
+  13:
+  14:    from `dbt-demos`.`dbt_shipyard`.`stg_customers`
+  15:    where customer_id is not null
+  16:    group by customer_id
+  17:    having count(*) > 1
+  18:
+  19:) validation_errors
+  20:
+  21:
+    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |
+2021-01-04 21:42:01.000842 (Thread-1): finished collecting timing info
+2021-01-04 21:42:01.001855 (Thread-1): Runtime Error in test unique_stg_customers_customer_id (models/schema.yml)
+  404 Not found: Dataset dbt-demos:dbt_shipyard was not found in location US
+  
+  (job ID: 10beda03-baf6-436e-a2a9-5c6594a720ca)
+Traceback (most recent call last):
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 103, in exception_handler
+    yield
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 442, in _retry_and_handle
+    return retry.retry_target(
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/google/api_core/retry.py", line 184, in retry_target
+    return target()
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 266, in fn
+    return self._query_and_results(client, sql, conn, job_params)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 428, in _query_and_results
+    iterator = query_job.result(timeout=timeout)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/google/cloud/bigquery/job.py", line 3207, in result
+    super(QueryJob, self).result(retry=retry, timeout=timeout)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/google/cloud/bigquery/job.py", line 812, in result
+    return super(_AsyncJob, self).result(timeout=timeout)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/google/api_core/future/polling.py", line 127, in result
+    raise self._exception
+google.api_core.exceptions.NotFound: 404 Not found: Dataset dbt-demos:dbt_shipyard was not found in location US
+
+(job ID: 10beda03-baf6-436e-a2a9-5c6594a720ca)
+
+                                                                    -----Query Job SQL Follows-----                                                                    
+
+    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |
+   1:/* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.unique_stg_customers_customer_id"} */
+   2:
+   3:    
+   4:    
+   5:
+   6:
+   7:
+   8:select count(*) as validation_errors
+   9:from (
+  10:
+  11:    select
+  12:        customer_id
+  13:
+  14:    from `dbt-demos`.`dbt_shipyard`.`stg_customers`
+  15:    where customer_id is not null
+  16:    group by customer_id
+  17:    having count(*) > 1
+  18:
+  19:) validation_errors
+  20:
+  21:
+    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/task/base.py", line 333, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/task/base.py", line 276, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/task/base.py", line 378, in run
+    return self.execute(compiled_node, manifest)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/task/test.py", line 84, in execute
+    failed_rows = self.execute_schema_test(test)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/task/test.py", line 61, in execute_schema_test
+    res, table = self.adapter.execute(
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 224, in execute
+    return self.connections.execute(
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 275, in execute
+    query_job, iterator = self.raw_execute(sql, fetch=fetch)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 268, in raw_execute
+    query_job, iterator = self._retry_and_handle(msg=sql, conn=conn, fn=fn)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 442, in _retry_and_handle
+    return retry.retry_target(
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 134, in exception_handler
+    raise RuntimeException(exc_message)
+dbt.exceptions.RuntimeException: Runtime Error in test unique_stg_customers_customer_id (models/schema.yml)
+  404 Not found: Dataset dbt-demos:dbt_shipyard was not found in location US
+  
+  (job ID: 10beda03-baf6-436e-a2a9-5c6594a720ca)
+2021-01-04 21:42:01.003038 (Thread-1): 15:42:01 | 6 of 7 ERROR unique_stg_customers_customer_id........................ [ERROR in 0.66s]
+2021-01-04 21:42:01.003331 (Thread-1): Finished running node test.jaffle_shop.unique_stg_customers_customer_id
+2021-01-04 21:42:01.110515 (Thread-4): Unhandled error while running:
+/* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.unique_stg_orders_order_id"} */
+
+    
+    
+
+
+
+select count(*) as validation_errors
+from (
+
+    select
+        order_id
+
+    from `dbt-demos`.`dbt_shipyard`.`stg_orders`
+    where order_id is not null
+    group by order_id
+    having count(*) > 1
+
+) validation_errors
+
+
+
+2021-01-04 21:42:01.111109 (Thread-4): 404 Not found: Dataset dbt-demos:dbt_shipyard was not found in location US
+
+(job ID: e4c3f0ef-d905-40fa-91f9-4dc78bbfc441)
+
+                                                                 -----Query Job SQL Follows-----                                                                 
+
+    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |
+   1:/* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.unique_stg_orders_order_id"} */
+   2:
+   3:    
+   4:    
+   5:
+   6:
+   7:
+   8:select count(*) as validation_errors
+   9:from (
+  10:
+  11:    select
+  12:        order_id
+  13:
+  14:    from `dbt-demos`.`dbt_shipyard`.`stg_orders`
+  15:    where order_id is not null
+  16:    group by order_id
+  17:    having count(*) > 1
+  18:
+  19:) validation_errors
+  20:
+  21:
+    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |
+2021-01-04 21:42:01.111512 (Thread-4): finished collecting timing info
+2021-01-04 21:42:01.113433 (Thread-2): Unhandled error while running:
+/* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.unique_customers_customer_id"} */
+
+    
+    
+
+
+
+select count(*) as validation_errors
+from (
+
+    select
+        customer_id
+
+    from `dbt-demos`.`dbt_shipyard`.`customers`
+    where customer_id is not null
+    group by customer_id
+    having count(*) > 1
+
+) validation_errors
+
+
+
+2021-01-04 21:42:01.113773 (Thread-2): 404 Not found: Dataset dbt-demos:dbt_shipyard was not found in location US
+
+(job ID: 598c76f0-40e4-4209-a28c-ac6049489d7e)
+
+                                                                  -----Query Job SQL Follows-----                                                                  
+
+    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |
+   1:/* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.unique_customers_customer_id"} */
+   2:
+   3:    
+   4:    
+   5:
+   6:
+   7:
+   8:select count(*) as validation_errors
+   9:from (
+  10:
+  11:    select
+  12:        customer_id
+  13:
+  14:    from `dbt-demos`.`dbt_shipyard`.`customers`
+  15:    where customer_id is not null
+  16:    group by customer_id
+  17:    having count(*) > 1
+  18:
+  19:) validation_errors
+  20:
+  21:
+    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |
+2021-01-04 21:42:01.114078 (Thread-2): finished collecting timing info
+2021-01-04 21:42:01.112561 (Thread-4): Runtime Error in test unique_stg_orders_order_id (models/schema.yml)
+  404 Not found: Dataset dbt-demos:dbt_shipyard was not found in location US
+  
+  (job ID: e4c3f0ef-d905-40fa-91f9-4dc78bbfc441)
+Traceback (most recent call last):
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 103, in exception_handler
+    yield
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 442, in _retry_and_handle
+    return retry.retry_target(
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/google/api_core/retry.py", line 184, in retry_target
+    return target()
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 266, in fn
+    return self._query_and_results(client, sql, conn, job_params)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 428, in _query_and_results
+    iterator = query_job.result(timeout=timeout)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/google/cloud/bigquery/job.py", line 3207, in result
+    super(QueryJob, self).result(retry=retry, timeout=timeout)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/google/cloud/bigquery/job.py", line 812, in result
+    return super(_AsyncJob, self).result(timeout=timeout)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/google/api_core/future/polling.py", line 127, in result
+    raise self._exception
+google.api_core.exceptions.NotFound: 404 Not found: Dataset dbt-demos:dbt_shipyard was not found in location US
+
+(job ID: e4c3f0ef-d905-40fa-91f9-4dc78bbfc441)
+
+                                                                 -----Query Job SQL Follows-----                                                                 
+
+    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |
+   1:/* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.unique_stg_orders_order_id"} */
+   2:
+   3:    
+   4:    
+   5:
+   6:
+   7:
+   8:select count(*) as validation_errors
+   9:from (
+  10:
+  11:    select
+  12:        order_id
+  13:
+  14:    from `dbt-demos`.`dbt_shipyard`.`stg_orders`
+  15:    where order_id is not null
+  16:    group by order_id
+  17:    having count(*) > 1
+  18:
+  19:) validation_errors
+  20:
+  21:
+    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/task/base.py", line 333, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/task/base.py", line 276, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/task/base.py", line 378, in run
+    return self.execute(compiled_node, manifest)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/task/test.py", line 84, in execute
+    failed_rows = self.execute_schema_test(test)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/task/test.py", line 61, in execute_schema_test
+    res, table = self.adapter.execute(
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 224, in execute
+    return self.connections.execute(
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 275, in execute
+    query_job, iterator = self.raw_execute(sql, fetch=fetch)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 268, in raw_execute
+    query_job, iterator = self._retry_and_handle(msg=sql, conn=conn, fn=fn)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 442, in _retry_and_handle
+    return retry.retry_target(
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 134, in exception_handler
+    raise RuntimeException(exc_message)
+dbt.exceptions.RuntimeException: Runtime Error in test unique_stg_orders_order_id (models/schema.yml)
+  404 Not found: Dataset dbt-demos:dbt_shipyard was not found in location US
+  
+  (job ID: e4c3f0ef-d905-40fa-91f9-4dc78bbfc441)
+2021-01-04 21:42:01.116747 (Thread-4): 15:42:01 | 7 of 7 ERROR unique_stg_orders_order_id.............................. [ERROR in 0.77s]
+2021-01-04 21:42:01.114982 (Thread-2): Runtime Error in test unique_customers_customer_id (models/schema.yml)
+  404 Not found: Dataset dbt-demos:dbt_shipyard was not found in location US
+  
+  (job ID: 598c76f0-40e4-4209-a28c-ac6049489d7e)
+Traceback (most recent call last):
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 103, in exception_handler
+    yield
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 442, in _retry_and_handle
+    return retry.retry_target(
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/google/api_core/retry.py", line 184, in retry_target
+    return target()
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 266, in fn
+    return self._query_and_results(client, sql, conn, job_params)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 428, in _query_and_results
+    iterator = query_job.result(timeout=timeout)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/google/cloud/bigquery/job.py", line 3207, in result
+    super(QueryJob, self).result(retry=retry, timeout=timeout)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/google/cloud/bigquery/job.py", line 812, in result
+    return super(_AsyncJob, self).result(timeout=timeout)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/google/api_core/future/polling.py", line 127, in result
+    raise self._exception
+google.api_core.exceptions.NotFound: 404 Not found: Dataset dbt-demos:dbt_shipyard was not found in location US
+
+(job ID: 598c76f0-40e4-4209-a28c-ac6049489d7e)
+
+                                                                  -----Query Job SQL Follows-----                                                                  
+
+    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |
+   1:/* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.unique_customers_customer_id"} */
+   2:
+   3:    
+   4:    
+   5:
+   6:
+   7:
+   8:select count(*) as validation_errors
+   9:from (
+  10:
+  11:    select
+  12:        customer_id
+  13:
+  14:    from `dbt-demos`.`dbt_shipyard`.`customers`
+  15:    where customer_id is not null
+  16:    group by customer_id
+  17:    having count(*) > 1
+  18:
+  19:) validation_errors
+  20:
+  21:
+    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/task/base.py", line 333, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/task/base.py", line 276, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/task/base.py", line 378, in run
+    return self.execute(compiled_node, manifest)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/task/test.py", line 84, in execute
+    failed_rows = self.execute_schema_test(test)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/task/test.py", line 61, in execute_schema_test
+    res, table = self.adapter.execute(
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 224, in execute
+    return self.connections.execute(
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 275, in execute
+    query_job, iterator = self.raw_execute(sql, fetch=fetch)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 268, in raw_execute
+    query_job, iterator = self._retry_and_handle(msg=sql, conn=conn, fn=fn)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 442, in _retry_and_handle
+    return retry.retry_target(
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 134, in exception_handler
+    raise RuntimeException(exc_message)
+dbt.exceptions.RuntimeException: Runtime Error in test unique_customers_customer_id (models/schema.yml)
+  404 Not found: Dataset dbt-demos:dbt_shipyard was not found in location US
+  
+  (job ID: 598c76f0-40e4-4209-a28c-ac6049489d7e)
+2021-01-04 21:42:01.117476 (Thread-4): Finished running node test.jaffle_shop.unique_stg_orders_order_id
+2021-01-04 21:42:01.117802 (Thread-2): 15:42:01 | 5 of 7 ERROR unique_customers_customer_id............................ [ERROR in 0.77s]
+2021-01-04 21:42:01.118442 (Thread-2): Finished running node test.jaffle_shop.unique_customers_customer_id
+2021-01-04 21:42:01.120605 (MainThread): Acquiring new bigquery connection "master".
+2021-01-04 21:42:01.121130 (MainThread): 15:42:01 | 
+2021-01-04 21:42:01.121358 (MainThread): 15:42:01 | Finished running 7 tests in 1.91s.
+2021-01-04 21:42:01.121538 (MainThread): Connection 'master' was properly closed.
+2021-01-04 21:42:01.121676 (MainThread): Connection 'test.jaffle_shop.unique_stg_customers_customer_id' was properly closed.
+2021-01-04 21:42:01.121809 (MainThread): Connection 'test.jaffle_shop.unique_customers_customer_id' was properly closed.
+2021-01-04 21:42:01.121941 (MainThread): Connection 'test.jaffle_shop.not_null_stg_customers_customer_id' was properly closed.
+2021-01-04 21:42:01.122069 (MainThread): Connection 'test.jaffle_shop.unique_stg_orders_order_id' was properly closed.
+2021-01-04 21:42:01.148236 (MainThread): 
+2021-01-04 21:42:01.148446 (MainThread): Completed with 7 errors and 0 warnings:
+2021-01-04 21:42:01.148565 (MainThread): 
+2021-01-04 21:42:01.148672 (MainThread): Runtime Error in test not_null_customers_customer_id (models/schema.yml)
+2021-01-04 21:42:01.148809 (MainThread):   404 Not found: Dataset dbt-demos:dbt_shipyard was not found in location US
+2021-01-04 21:42:01.148912 (MainThread):   
+2021-01-04 21:42:01.149002 (MainThread):   (job ID: 543ad0ba-c377-4c33-928d-c0d23ad26878)
+2021-01-04 21:42:01.149131 (MainThread): 
+2021-01-04 21:42:01.149210 (MainThread): Runtime Error in test accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned (models/schema.yml)
+2021-01-04 21:42:01.149284 (MainThread):   404 Not found: Dataset dbt-demos:dbt_shipyard was not found in location US
+2021-01-04 21:42:01.149352 (MainThread):   
+2021-01-04 21:42:01.149419 (MainThread):   (job ID: 81d6e999-6242-4fcc-95a0-704b74e25bf3)
+2021-01-04 21:42:01.149491 (MainThread): 
+2021-01-04 21:42:01.149585 (MainThread): Runtime Error in test not_null_stg_orders_order_id (models/schema.yml)
+2021-01-04 21:42:01.149659 (MainThread):   404 Not found: Dataset dbt-demos:dbt_shipyard was not found in location US
+2021-01-04 21:42:01.149726 (MainThread):   
+2021-01-04 21:42:01.149811 (MainThread):   (job ID: fd2e4ffc-cbeb-4bf6-a87f-968cb34575ed)
+2021-01-04 21:42:01.149885 (MainThread): 
+2021-01-04 21:42:01.149982 (MainThread): Runtime Error in test not_null_stg_customers_customer_id (models/schema.yml)
+2021-01-04 21:42:01.150055 (MainThread):   404 Not found: Dataset dbt-demos:dbt_shipyard was not found in location US
+2021-01-04 21:42:01.150123 (MainThread):   
+2021-01-04 21:42:01.150190 (MainThread):   (job ID: 5eeed53e-9188-4642-b28c-ca89ab100fbf)
+2021-01-04 21:42:01.150261 (MainThread): 
+2021-01-04 21:42:01.150338 (MainThread): Runtime Error in test unique_stg_customers_customer_id (models/schema.yml)
+2021-01-04 21:42:01.150412 (MainThread):   404 Not found: Dataset dbt-demos:dbt_shipyard was not found in location US
+2021-01-04 21:42:01.150477 (MainThread):   
+2021-01-04 21:42:01.150543 (MainThread):   (job ID: 10beda03-baf6-436e-a2a9-5c6594a720ca)
+2021-01-04 21:42:01.150619 (MainThread): 
+2021-01-04 21:42:01.150696 (MainThread): Runtime Error in test unique_stg_orders_order_id (models/schema.yml)
+2021-01-04 21:42:01.153200 (MainThread):   404 Not found: Dataset dbt-demos:dbt_shipyard was not found in location US
+2021-01-04 21:42:01.153446 (MainThread):   
+2021-01-04 21:42:01.153555 (MainThread):   (job ID: e4c3f0ef-d905-40fa-91f9-4dc78bbfc441)
+2021-01-04 21:42:01.153795 (MainThread): 
+2021-01-04 21:42:01.153940 (MainThread): Runtime Error in test unique_customers_customer_id (models/schema.yml)
+2021-01-04 21:42:01.154176 (MainThread):   404 Not found: Dataset dbt-demos:dbt_shipyard was not found in location US
+2021-01-04 21:42:01.154331 (MainThread):   
+2021-01-04 21:42:01.154580 (MainThread):   (job ID: 598c76f0-40e4-4209-a28c-ac6049489d7e)
+2021-01-04 21:42:01.154769 (MainThread): 
+Done. PASS=0 WARN=0 ERROR=7 SKIP=0 TOTAL=7
+2021-01-04 21:42:01.154983 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1118bbc70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111cfc8b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111cfcb80>]}
+2021-01-04 21:42:01.155199 (MainThread): Flushing usage events
+2021-01-04 21:42:22.839040 (MainThread): Running with dbt=0.18.1
+2021-01-04 21:42:23.022558 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/blake/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-01-04 21:42:23.023255 (MainThread): Tracking: tracking
+2021-01-04 21:42:23.034839 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1096446d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109653850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1096533a0>]}
+2021-01-04 21:42:23.055660 (MainThread): Partial parsing not enabled
+2021-01-04 21:42:23.056759 (MainThread): Parsing macros/etc.sql
+2021-01-04 21:42:23.059877 (MainThread): Parsing macros/catalog.sql
+2021-01-04 21:42:23.065736 (MainThread): Parsing macros/adapters.sql
+2021-01-04 21:42:23.084097 (MainThread): Parsing macros/materializations/seed.sql
+2021-01-04 21:42:23.086750 (MainThread): Parsing macros/materializations/view.sql
+2021-01-04 21:42:23.089463 (MainThread): Parsing macros/materializations/table.sql
+2021-01-04 21:42:23.098941 (MainThread): Parsing macros/materializations/copy.sql
+2021-01-04 21:42:23.103060 (MainThread): Parsing macros/materializations/incremental.sql
+2021-01-04 21:42:23.115340 (MainThread): Parsing macros/materializations/snapshot.sql
+2021-01-04 21:42:23.118064 (MainThread): Parsing macros/core.sql
+2021-01-04 21:42:23.121552 (MainThread): Parsing macros/materializations/helpers.sql
+2021-01-04 21:42:23.129803 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-01-04 21:42:23.131459 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-01-04 21:42:23.147298 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-01-04 21:42:23.174330 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-01-04 21:42:23.193644 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-01-04 21:42:23.195387 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-01-04 21:42:23.201273 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-01-04 21:42:23.213182 (MainThread): Parsing macros/materializations/table/table.sql
+2021-01-04 21:42:23.219140 (MainThread): Parsing macros/materializations/view/view.sql
+2021-01-04 21:42:23.224547 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-01-04 21:42:23.229118 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-01-04 21:42:23.229971 (MainThread): Parsing macros/etc/query.sql
+2021-01-04 21:42:23.230857 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-01-04 21:42:23.232199 (MainThread): Parsing macros/etc/datetime.sql
+2021-01-04 21:42:23.240353 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-01-04 21:42:23.242270 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-01-04 21:42:23.243832 (MainThread): Parsing macros/adapters/common.sql
+2021-01-04 21:42:23.285638 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-01-04 21:42:23.287779 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-01-04 21:42:23.289229 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-01-04 21:42:23.290805 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-01-04 21:42:23.299163 (MainThread): Partial parsing not enabled
+2021-01-04 21:42:23.364713 (MainThread): Acquiring new bigquery connection "model.jaffle_shop.customers".
+2021-01-04 21:42:23.385898 (MainThread): Acquiring new bigquery connection "model.jaffle_shop.stg_customers".
+2021-01-04 21:42:23.394644 (MainThread): Acquiring new bigquery connection "model.jaffle_shop.stg_orders".
+2021-01-04 21:42:23.662910 (MainThread): Found 3 models, 7 tests, 0 snapshots, 0 analyses, 155 macros, 0 operations, 0 seed files, 0 sources
+2021-01-04 21:42:23.664042 (MainThread): 
+2021-01-04 21:42:23.664496 (MainThread): Acquiring new bigquery connection "master".
+2021-01-04 21:42:23.668256 (ThreadPoolExecutor-0_0): Acquiring new bigquery connection "list_dbt-demos".
+2021-01-04 21:42:23.668485 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-01-04 21:42:23.950962 (ThreadPoolExecutor-0_0): Acquiring new bigquery connection "create_dbt-demos_dbt_shipyard".
+2021-01-04 21:42:23.951602 (ThreadPoolExecutor-0_0): Acquiring new bigquery connection "create_dbt-demos_dbt_shipyard".
+2021-01-04 21:42:23.951821 (ThreadPoolExecutor-0_0): Creating schema "dbt-demos.dbt_shipyard".
+2021-01-04 21:42:23.952038 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state closed
+2021-01-04 21:42:23.952988 (ThreadPoolExecutor-0_0): Client.dataset is deprecated and will be removed in a future version. Use a string like 'my_project.my_dataset' or a cloud.google.bigquery.DatasetReference object, instead.
+2021-01-04 21:42:24.625693 (ThreadPoolExecutor-1_0): Acquiring new bigquery connection "list_dbt-demos_dbt_shipyard".
+2021-01-04 21:42:24.626039 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-01-04 21:42:24.626683 (ThreadPoolExecutor-1_0): Client.dataset is deprecated and will be removed in a future version. Use a string like 'my_project.my_dataset' or a cloud.google.bigquery.DatasetReference object, instead.
+2021-01-04 21:42:24.954954 (MainThread): 15:42:24 | Concurrency: 4 threads (target='dev')
+2021-01-04 21:42:24.955452 (MainThread): 15:42:24 | 
+2021-01-04 21:42:24.962966 (Thread-1): Began running node model.jaffle_shop.stg_customers
+2021-01-04 21:42:24.963366 (Thread-2): Began running node model.jaffle_shop.stg_orders
+2021-01-04 21:42:24.965211 (Thread-1): unclosed <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.0.162', 52569), raddr=('216.58.194.42', 443)>
+2021-01-04 21:42:24.967229 (Thread-2): 15:42:24 | 2 of 3 START table model dbt_shipyard.stg_orders..................... [RUN]
+2021-01-04 21:42:24.967567 (Thread-1): unclosed <socket.socket fd=11, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.0.162', 52570), raddr=('216.58.193.138', 443)>
+2021-01-04 21:42:24.968212 (Thread-2): Acquiring new bigquery connection "model.jaffle_shop.stg_orders".
+2021-01-04 21:42:24.968486 (Thread-1): unclosed <socket.socket fd=13, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.0.162', 52572), raddr=('216.58.193.138', 443)>
+2021-01-04 21:42:24.968694 (Thread-2): Compiling model.jaffle_shop.stg_orders
+2021-01-04 21:42:24.969023 (Thread-1): unclosed <socket.socket fd=12, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.0.162', 52571), raddr=('216.58.194.42', 443)>
+2021-01-04 21:42:24.986760 (Thread-1): 15:42:24 | 1 of 3 START table model dbt_shipyard.stg_customers.................. [RUN]
+2021-01-04 21:42:24.993292 (Thread-1): Acquiring new bigquery connection "model.jaffle_shop.stg_customers".
+2021-01-04 21:42:24.996439 (Thread-2): Writing injected SQL for node "model.jaffle_shop.stg_orders"
+2021-01-04 21:42:24.996544 (Thread-1): Compiling model.jaffle_shop.stg_customers
+2021-01-04 21:42:25.002636 (Thread-1): Writing injected SQL for node "model.jaffle_shop.stg_customers"
+2021-01-04 21:42:25.003113 (Thread-2): finished collecting timing info
+2021-01-04 21:42:25.014562 (Thread-1): finished collecting timing info
+2021-01-04 21:42:25.061645 (Thread-2): Writing runtime SQL for node "model.jaffle_shop.stg_orders"
+2021-01-04 21:42:25.062778 (Thread-1): Writing runtime SQL for node "model.jaffle_shop.stg_customers"
+2021-01-04 21:42:25.063611 (Thread-1): Opening a new connection, currently in state closed
+2021-01-04 21:42:25.063781 (Thread-2): Opening a new connection, currently in state init
+2021-01-04 21:42:25.064434 (Thread-1): On model.jaffle_shop.stg_customers: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.stg_customers"} */
+
+
+  create or replace table `dbt-demos`.`dbt_shipyard`.`stg_customers`
+  
+  
+  OPTIONS()
+  as (
+    select
+    id as customer_id,
+    first_name,
+    last_name
+
+from `dbt-tutorial`.jaffle_shop.customers
+  );
+    
+2021-01-04 21:42:25.065067 (Thread-2): On model.jaffle_shop.stg_orders: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.stg_orders"} */
+
+
+  create or replace table `dbt-demos`.`dbt_shipyard`.`stg_orders`
+  
+  
+  OPTIONS()
+  as (
+    select
+    id as order_id,
+    user_id as customer_id,
+    order_date,
+    status
+
+from `dbt-tutorial`.jaffle_shop.orders
+  );
+    
+2021-01-04 21:42:27.741990 (Thread-2): finished collecting timing info
+2021-01-04 21:42:27.743000 (Thread-2): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b18b7be2-8706-4f7d-92b2-fd9319c6dd9a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109b36c40>]}
+2021-01-04 21:42:27.743471 (Thread-1): finished collecting timing info
+2021-01-04 21:42:27.744261 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b18b7be2-8706-4f7d-92b2-fd9319c6dd9a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1099fbca0>]}
+2021-01-04 21:42:27.745959 (Thread-1): 15:42:27 | 1 of 3 OK created table model dbt_shipyard.stg_customers............. [CREATE TABLE (100.0 rows, 1.9 KB processed) in 2.75s]
+2021-01-04 21:42:27.747414 (Thread-2): 15:42:27 | 2 of 3 OK created table model dbt_shipyard.stg_orders................ [CREATE TABLE (99.0 rows, 3.3 KB processed) in 2.77s]
+2021-01-04 21:42:27.747633 (Thread-1): Finished running node model.jaffle_shop.stg_customers
+2021-01-04 21:42:27.747813 (Thread-2): Finished running node model.jaffle_shop.stg_orders
+2021-01-04 21:42:27.748857 (Thread-4): Began running node model.jaffle_shop.customers
+2021-01-04 21:42:27.750220 (Thread-4): 15:42:27 | 3 of 3 START view model dbt_shipyard.customers....................... [RUN]
+2021-01-04 21:42:27.750922 (Thread-4): Acquiring new bigquery connection "model.jaffle_shop.customers".
+2021-01-04 21:42:27.751084 (Thread-4): Compiling model.jaffle_shop.customers
+2021-01-04 21:42:27.762101 (Thread-4): Writing injected SQL for node "model.jaffle_shop.customers"
+2021-01-04 21:42:27.762543 (Thread-4): finished collecting timing info
+2021-01-04 21:42:27.781779 (Thread-4): Writing runtime SQL for node "model.jaffle_shop.customers"
+2021-01-04 21:42:27.782312 (Thread-4): Opening a new connection, currently in state init
+2021-01-04 21:42:27.782681 (Thread-4): On model.jaffle_shop.customers: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.customers"} */
+
+
+  create or replace view `dbt-demos`.`dbt_shipyard`.`customers`
+  OPTIONS()
+  as 
+
+
+with customers as (
+
+    select * from `dbt-demos`.`dbt_shipyard`.`stg_customers`
+),
+
+orders as (
+
+    select * from `dbt-demos`.`dbt_shipyard`.`stg_orders`
+
+),
+
+customer_orders as (
+
+    select
+        customer_id,
+
+        min(order_date) as first_order_date,
+        max(order_date) as most_recent_order_date,
+        count(order_id) as number_of_orders
+
+    from orders
+
+    group by 1
+
+),
+
+
+final as (
+
+    select
+        customers.customer_id,
+        customers.first_name,
+        customers.last_name,
+        customer_orders.first_order_date,
+        customer_orders.most_recent_order_date,
+        coalesce(customer_orders.number_of_orders, 0) as number_of_orders
+
+    from customers
+
+    left join customer_orders using (customer_id)
+
+)
+
+select * from final;
+
+
+2021-01-04 21:42:28.559203 (Thread-4): finished collecting timing info
+2021-01-04 21:42:28.560479 (Thread-4): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b18b7be2-8706-4f7d-92b2-fd9319c6dd9a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109827d30>]}
+2021-01-04 21:42:28.562472 (Thread-4): 15:42:28 | 3 of 3 OK created view model dbt_shipyard.customers.................. [CREATE VIEW in 0.81s]
+2021-01-04 21:42:28.562730 (Thread-4): Finished running node model.jaffle_shop.customers
+2021-01-04 21:42:28.564797 (MainThread): Acquiring new bigquery connection "master".
+2021-01-04 21:42:28.565287 (MainThread): 15:42:28 | 
+2021-01-04 21:42:28.565479 (MainThread): 15:42:28 | Finished running 2 table models, 1 view model in 4.90s.
+2021-01-04 21:42:28.565629 (MainThread): Connection 'master' was properly closed.
+2021-01-04 21:42:28.565741 (MainThread): Connection 'model.jaffle_shop.stg_customers' was properly closed.
+2021-01-04 21:42:28.565849 (MainThread): Connection 'model.jaffle_shop.stg_orders' was properly closed.
+2021-01-04 21:42:28.565951 (MainThread): Connection 'model.jaffle_shop.customers' was properly closed.
+2021-01-04 21:42:28.579363 (MainThread): 
+2021-01-04 21:42:28.579532 (MainThread): Completed successfully
+2021-01-04 21:42:28.579686 (MainThread): 
+Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+2021-01-04 21:42:28.579897 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109b2ab50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109820190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109b3b280>]}
+2021-01-04 21:42:28.580138 (MainThread): Flushing usage events
+2021-01-04 21:42:42.467114 (MainThread): Running with dbt=0.18.1
+2021-01-04 21:42:42.648272 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.test.TestTask'>, data=False, debug=False, defer=None, exclude=None, fail_fast=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/blake/.dbt', project_dir=None, record_timing_info=None, rpc_method='test', schema=False, selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='test', write_json=True)
+2021-01-04 21:42:42.649051 (MainThread): Tracking: tracking
+2021-01-04 21:42:42.660701 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10519e6a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1049e00d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10519ec10>]}
+2021-01-04 21:42:42.681247 (MainThread): Partial parsing not enabled
+2021-01-04 21:42:42.682375 (MainThread): Parsing macros/etc.sql
+2021-01-04 21:42:42.685259 (MainThread): Parsing macros/catalog.sql
+2021-01-04 21:42:42.691491 (MainThread): Parsing macros/adapters.sql
+2021-01-04 21:42:42.710224 (MainThread): Parsing macros/materializations/seed.sql
+2021-01-04 21:42:42.712892 (MainThread): Parsing macros/materializations/view.sql
+2021-01-04 21:42:42.715529 (MainThread): Parsing macros/materializations/table.sql
+2021-01-04 21:42:42.724985 (MainThread): Parsing macros/materializations/copy.sql
+2021-01-04 21:42:42.729168 (MainThread): Parsing macros/materializations/incremental.sql
+2021-01-04 21:42:42.742006 (MainThread): Parsing macros/materializations/snapshot.sql
+2021-01-04 21:42:42.744674 (MainThread): Parsing macros/core.sql
+2021-01-04 21:42:42.748097 (MainThread): Parsing macros/materializations/helpers.sql
+2021-01-04 21:42:42.756205 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-01-04 21:42:42.757809 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-01-04 21:42:42.772856 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-01-04 21:42:42.797688 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-01-04 21:42:42.816278 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-01-04 21:42:42.817886 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-01-04 21:42:42.823518 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-01-04 21:42:42.834878 (MainThread): Parsing macros/materializations/table/table.sql
+2021-01-04 21:42:42.840945 (MainThread): Parsing macros/materializations/view/view.sql
+2021-01-04 21:42:42.846411 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-01-04 21:42:42.850693 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-01-04 21:42:42.851518 (MainThread): Parsing macros/etc/query.sql
+2021-01-04 21:42:42.852430 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-01-04 21:42:42.854205 (MainThread): Parsing macros/etc/datetime.sql
+2021-01-04 21:42:42.862102 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-01-04 21:42:42.863816 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-01-04 21:42:42.865259 (MainThread): Parsing macros/adapters/common.sql
+2021-01-04 21:42:42.900669 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-01-04 21:42:42.902216 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-01-04 21:42:42.903919 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-01-04 21:42:42.905310 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-01-04 21:42:42.912201 (MainThread): Partial parsing not enabled
+2021-01-04 21:42:42.977622 (MainThread): Acquiring new bigquery connection "model.jaffle_shop.customers".
+2021-01-04 21:42:43.000304 (MainThread): Acquiring new bigquery connection "model.jaffle_shop.stg_customers".
+2021-01-04 21:42:43.009248 (MainThread): Acquiring new bigquery connection "model.jaffle_shop.stg_orders".
+2021-01-04 21:42:43.264402 (MainThread): Found 3 models, 7 tests, 0 snapshots, 0 analyses, 155 macros, 0 operations, 0 seed files, 0 sources
+2021-01-04 21:42:43.265753 (MainThread): 
+2021-01-04 21:42:43.266152 (MainThread): Acquiring new bigquery connection "master".
+2021-01-04 21:42:43.277177 (ThreadPoolExecutor-1_0): Acquiring new bigquery connection "list_dbt-demos_dbt_shipyard".
+2021-01-04 21:42:43.277483 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state init
+2021-01-04 21:42:43.278084 (ThreadPoolExecutor-1_0): Client.dataset is deprecated and will be removed in a future version. Use a string like 'my_project.my_dataset' or a cloud.google.bigquery.DatasetReference object, instead.
+2021-01-04 21:42:43.570876 (MainThread): 15:42:43 | Concurrency: 4 threads (target='dev')
+2021-01-04 21:42:43.571245 (MainThread): 15:42:43 | 
+2021-01-04 21:42:43.576946 (Thread-1): Began running node test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned
+2021-01-04 21:42:43.577280 (Thread-2): Began running node test.jaffle_shop.not_null_customers_customer_id
+2021-01-04 21:42:43.577771 (Thread-1): 15:42:43 | 1 of 7 START test accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned [RUN]
+2021-01-04 21:42:43.577936 (Thread-3): Began running node test.jaffle_shop.not_null_stg_customers_customer_id
+2021-01-04 21:42:43.578200 (Thread-4): Began running node test.jaffle_shop.not_null_stg_orders_order_id
+2021-01-04 21:42:43.578424 (Thread-2): 15:42:43 | 2 of 7 START test not_null_customers_customer_id..................... [RUN]
+2021-01-04 21:42:43.578916 (Thread-1): Acquiring new bigquery connection "test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned".
+2021-01-04 21:42:43.579131 (Thread-3): 15:42:43 | 3 of 7 START test not_null_stg_customers_customer_id................. [RUN]
+2021-01-04 21:42:43.579319 (Thread-4): 15:42:43 | 4 of 7 START test not_null_stg_orders_order_id....................... [RUN]
+2021-01-04 21:42:43.579745 (Thread-2): Acquiring new bigquery connection "test.jaffle_shop.not_null_customers_customer_id".
+2021-01-04 21:42:43.579945 (Thread-1): Compiling test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned
+2021-01-04 21:42:43.580318 (Thread-3): Acquiring new bigquery connection "test.jaffle_shop.not_null_stg_customers_customer_id".
+2021-01-04 21:42:43.580703 (Thread-4): Acquiring new bigquery connection "test.jaffle_shop.not_null_stg_orders_order_id".
+2021-01-04 21:42:43.580877 (Thread-2): Compiling test.jaffle_shop.not_null_customers_customer_id
+2021-01-04 21:42:43.592912 (Thread-3): Compiling test.jaffle_shop.not_null_stg_customers_customer_id
+2021-01-04 21:42:43.593111 (Thread-1): unclosed <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.0.162', 52585), raddr=('216.58.194.42', 443)>
+2021-01-04 21:42:43.593266 (Thread-4): Compiling test.jaffle_shop.not_null_stg_orders_order_id
+2021-01-04 21:42:43.607739 (Thread-2): Writing injected SQL for node "test.jaffle_shop.not_null_customers_customer_id"
+2021-01-04 21:42:43.615263 (Thread-3): Writing injected SQL for node "test.jaffle_shop.not_null_stg_customers_customer_id"
+2021-01-04 21:42:43.615706 (Thread-1): unclosed <socket.socket fd=11, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.0.162', 52586), raddr=('216.58.193.138', 443)>
+2021-01-04 21:42:43.624944 (Thread-4): Writing injected SQL for node "test.jaffle_shop.not_null_stg_orders_order_id"
+2021-01-04 21:42:43.625629 (Thread-2): finished collecting timing info
+2021-01-04 21:42:43.631921 (Thread-3): finished collecting timing info
+2021-01-04 21:42:43.635336 (Thread-1): Writing injected SQL for node "test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned"
+2021-01-04 21:42:43.635678 (Thread-2): Opening a new connection, currently in state init
+2021-01-04 21:42:43.636069 (Thread-3): Opening a new connection, currently in state init
+2021-01-04 21:42:43.636352 (Thread-4): finished collecting timing info
+2021-01-04 21:42:43.637271 (Thread-2): On test.jaffle_shop.not_null_customers_customer_id: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.not_null_customers_customer_id"} */
+
+    
+    
+
+
+
+select count(*) as validation_errors
+from `dbt-demos`.`dbt_shipyard`.`customers`
+where customer_id is null
+
+
+
+2021-01-04 21:42:43.637707 (Thread-4): Opening a new connection, currently in state init
+2021-01-04 21:42:43.637785 (Thread-1): finished collecting timing info
+2021-01-04 21:42:43.638048 (Thread-3): On test.jaffle_shop.not_null_stg_customers_customer_id: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.not_null_stg_customers_customer_id"} */
+
+    
+    
+
+
+
+select count(*) as validation_errors
+from `dbt-demos`.`dbt_shipyard`.`stg_customers`
+where customer_id is null
+
+
+
+2021-01-04 21:42:43.639030 (Thread-1): Opening a new connection, currently in state closed
+2021-01-04 21:42:43.639266 (Thread-4): On test.jaffle_shop.not_null_stg_orders_order_id: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.not_null_stg_orders_order_id"} */
+
+    
+    
+
+
+
+select count(*) as validation_errors
+from `dbt-demos`.`dbt_shipyard`.`stg_orders`
+where order_id is null
+
+
+
+2021-01-04 21:42:43.640063 (Thread-1): On test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned"} */
+
+    
+    
+
+
+
+
+with all_values as (
+
+    select distinct
+        status as value_field
+
+    from `dbt-demos`.`dbt_shipyard`.`stg_orders`
+
+),
+
+validation_errors as (
+
+    select
+        value_field
+
+    from all_values
+    where value_field not in (
+        'placed','shipped','completed','return_pending','returned'
+    )
+)
+
+select count(*) as validation_errors
+from validation_errors
+
+
+
+2021-01-04 21:42:44.773552 (Thread-3): finished collecting timing info
+2021-01-04 21:42:44.775037 (Thread-3): 15:42:44 | 3 of 7 PASS not_null_stg_customers_customer_id....................... [PASS in 1.19s]
+2021-01-04 21:42:44.775374 (Thread-3): Finished running node test.jaffle_shop.not_null_stg_customers_customer_id
+2021-01-04 21:42:44.775696 (Thread-3): Began running node test.jaffle_shop.unique_customers_customer_id
+2021-01-04 21:42:44.776244 (Thread-3): 15:42:44 | 5 of 7 START test unique_customers_customer_id....................... [RUN]
+2021-01-04 21:42:44.777528 (Thread-3): Acquiring new bigquery connection "test.jaffle_shop.unique_customers_customer_id".
+2021-01-04 21:42:44.779094 (Thread-3): Compiling test.jaffle_shop.unique_customers_customer_id
+2021-01-04 21:42:44.797820 (Thread-3): Writing injected SQL for node "test.jaffle_shop.unique_customers_customer_id"
+2021-01-04 21:42:44.799263 (Thread-3): finished collecting timing info
+2021-01-04 21:42:44.799655 (Thread-3): Opening a new connection, currently in state closed
+2021-01-04 21:42:44.800135 (Thread-3): On test.jaffle_shop.unique_customers_customer_id: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.unique_customers_customer_id"} */
+
+    
+    
+
+
+
+select count(*) as validation_errors
+from (
+
+    select
+        customer_id
+
+    from `dbt-demos`.`dbt_shipyard`.`customers`
+    where customer_id is not null
+    group by customer_id
+    having count(*) > 1
+
+) validation_errors
+
+
+
+2021-01-04 21:42:44.939083 (Thread-4): finished collecting timing info
+2021-01-04 21:42:44.940605 (Thread-4): 15:42:44 | 4 of 7 PASS not_null_stg_orders_order_id............................. [PASS in 1.36s]
+2021-01-04 21:42:44.941025 (Thread-4): Finished running node test.jaffle_shop.not_null_stg_orders_order_id
+2021-01-04 21:42:44.941361 (Thread-4): Began running node test.jaffle_shop.unique_stg_customers_customer_id
+2021-01-04 21:42:44.941670 (Thread-4): 15:42:44 | 6 of 7 START test unique_stg_customers_customer_id................... [RUN]
+2021-01-04 21:42:44.942649 (Thread-4): Acquiring new bigquery connection "test.jaffle_shop.unique_stg_customers_customer_id".
+2021-01-04 21:42:44.943149 (Thread-4): Compiling test.jaffle_shop.unique_stg_customers_customer_id
+2021-01-04 21:42:44.961020 (Thread-4): Writing injected SQL for node "test.jaffle_shop.unique_stg_customers_customer_id"
+2021-01-04 21:42:44.961806 (Thread-4): finished collecting timing info
+2021-01-04 21:42:44.962253 (Thread-4): Opening a new connection, currently in state closed
+2021-01-04 21:42:44.963018 (Thread-4): On test.jaffle_shop.unique_stg_customers_customer_id: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.unique_stg_customers_customer_id"} */
+
+    
+    
+
+
+
+select count(*) as validation_errors
+from (
+
+    select
+        customer_id
+
+    from `dbt-demos`.`dbt_shipyard`.`stg_customers`
+    where customer_id is not null
+    group by customer_id
+    having count(*) > 1
+
+) validation_errors
+
+
+
+2021-01-04 21:42:45.052867 (Thread-2): finished collecting timing info
+2021-01-04 21:42:45.054761 (Thread-2): 15:42:45 | 2 of 7 PASS not_null_customers_customer_id........................... [PASS in 1.48s]
+2021-01-04 21:42:45.058242 (Thread-2): Finished running node test.jaffle_shop.not_null_customers_customer_id
+2021-01-04 21:42:45.058785 (Thread-2): Began running node test.jaffle_shop.unique_stg_orders_order_id
+2021-01-04 21:42:45.059310 (Thread-2): 15:42:45 | 7 of 7 START test unique_stg_orders_order_id......................... [RUN]
+2021-01-04 21:42:45.061755 (Thread-2): Acquiring new bigquery connection "test.jaffle_shop.unique_stg_orders_order_id".
+2021-01-04 21:42:45.064218 (Thread-2): Compiling test.jaffle_shop.unique_stg_orders_order_id
+2021-01-04 21:42:45.080913 (Thread-2): Writing injected SQL for node "test.jaffle_shop.unique_stg_orders_order_id"
+2021-01-04 21:42:45.082376 (Thread-2): finished collecting timing info
+2021-01-04 21:42:45.082808 (Thread-2): Opening a new connection, currently in state closed
+2021-01-04 21:42:45.083476 (Thread-2): On test.jaffle_shop.unique_stg_orders_order_id: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.unique_stg_orders_order_id"} */
+
+    
+    
+
+
+
+select count(*) as validation_errors
+from (
+
+    select
+        order_id
+
+    from `dbt-demos`.`dbt_shipyard`.`stg_orders`
+    where order_id is not null
+    group by order_id
+    having count(*) > 1
+
+) validation_errors
+
+
+
+2021-01-04 21:42:45.411446 (Thread-1): finished collecting timing info
+2021-01-04 21:42:45.412935 (Thread-1): 15:42:45 | 1 of 7 PASS accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned [PASS in 1.83s]
+2021-01-04 21:42:45.413503 (Thread-1): Finished running node test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned
+2021-01-04 21:42:46.314854 (Thread-3): finished collecting timing info
+2021-01-04 21:42:46.316119 (Thread-3): 15:42:46 | 5 of 7 PASS unique_customers_customer_id............................. [PASS in 1.54s]
+2021-01-04 21:42:46.316483 (Thread-3): Finished running node test.jaffle_shop.unique_customers_customer_id
+2021-01-04 21:42:46.332401 (Thread-2): finished collecting timing info
+2021-01-04 21:42:46.333596 (Thread-2): 15:42:46 | 7 of 7 PASS unique_stg_orders_order_id............................... [PASS in 1.27s]
+2021-01-04 21:42:46.335494 (Thread-4): finished collecting timing info
+2021-01-04 21:42:46.336194 (Thread-2): Finished running node test.jaffle_shop.unique_stg_orders_order_id
+2021-01-04 21:42:46.336850 (Thread-4): 15:42:46 | 6 of 7 PASS unique_stg_customers_customer_id......................... [PASS in 1.39s]
+2021-01-04 21:42:46.337336 (Thread-4): Finished running node test.jaffle_shop.unique_stg_customers_customer_id
+2021-01-04 21:42:46.339410 (MainThread): Acquiring new bigquery connection "master".
+2021-01-04 21:42:46.339979 (MainThread): 15:42:46 | 
+2021-01-04 21:42:46.340217 (MainThread): 15:42:46 | Finished running 7 tests in 3.07s.
+2021-01-04 21:42:46.340407 (MainThread): Connection 'master' was properly closed.
+2021-01-04 21:42:46.340548 (MainThread): Connection 'test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned' was properly closed.
+2021-01-04 21:42:46.340683 (MainThread): Connection 'test.jaffle_shop.unique_stg_orders_order_id' was properly closed.
+2021-01-04 21:42:46.340814 (MainThread): Connection 'test.jaffle_shop.unique_customers_customer_id' was properly closed.
+2021-01-04 21:42:46.340944 (MainThread): Connection 'test.jaffle_shop.unique_stg_customers_customer_id' was properly closed.
+2021-01-04 21:42:46.370597 (MainThread): 
+2021-01-04 21:42:46.370802 (MainThread): Completed successfully
+2021-01-04 21:42:46.370991 (MainThread): 
+Done. PASS=7 WARN=0 ERROR=0 SKIP=0 TOTAL=7
+2021-01-04 21:42:46.371236 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10522f400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10564c8e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10564c910>]}
+2021-01-04 21:42:46.371504 (MainThread): Flushing usage events
